@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "name": "Boombox",
+  "layout": [
+    "arrows:0:0",
+    "roller:1:3",
+    "reelLarge:0:5"
+  ],
+  "layoutLandscape": [
+    "reelLarge:0:0",
+    "roller:7:1",
+    "arrows:7:3"
+  ],
+  "bindings": [
+    {
+      "actions": [
+        "arrowCenter"
+      ],
+      "builtIn": "togglePlayback"
+    },
+    {
+      "actions": [
+        "arrowRight"
+      ],
+      "builtIn": "nextTrack"
+    },
+    {
+      "actions": [
+        "arrowLeft"
+      ],
+      "builtIn": "previousTrack"
+    }
+  ],
+  "analog": [
+    {
+      "control": "reel",
+      "target": "trackList"
+    },
+    {
+      "control": "roller",
+      "target": "volume"
+    }
+  ]
+}

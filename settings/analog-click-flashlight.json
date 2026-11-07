@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "name": "Flashlight Panel",
+  "layout": [
+    "knock:0:0",
+    "lever:2:0",
+    "guardedSwitch:0:3",
+    "bolt:1:6",
+    "roller:1:8"
+  ],
+  "layoutLandscape": [
+    "knock:0:0",
+    "lever:2:0",
+    "guardedSwitch:5:0",
+    "bolt:5:3",
+    "roller:5:5"
+  ],
+  "bindings": [
+    {
+      "actions": [
+        "knockIn"
+      ],
+      "builtIn": "toggleLight"
+    },
+    {
+      "actions": [
+        "knockOut"
+      ],
+      "builtIn": "toggleLight"
+    },
+    {
+      "actions": [
+        "leverUp"
+      ],
+      "builtIn": "blinkLight"
+    },
+    {
+      "actions": [
+        "switchOn"
+      ],
+      "builtIn": "sosLight"
+    },
+    {
+      "actions": [
+        "boltCycle"
+      ],
+      "builtIn": "toggleWhiteScreen"
+    }
+  ],
+  "analog": [
+    {
+      "control": "roller",
+      "target": "lightLevel"
+    }
+  ]
+}

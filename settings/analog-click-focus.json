@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "name": "Focus Timer",
+  "layout": [
+    "lever:0:0",
+    "knock:2:0",
+    "slider:1:3",
+    "reel:1:5"
+  ],
+  "layoutLandscape": [
+    "lever:0:0",
+    "knock:2:0",
+    "reel:0:2",
+    "slider:6:2"
+  ],
+  "bindings": [
+    {
+      "actions": [
+        "sliderRight",
+        "reelSpin"
+      ],
+      "builtIn": "timer25"
+    },
+    {
+      "actions": [
+        "sliderLeft",
+        "reelSpin"
+      ],
+      "builtIn": "timer5"
+    },
+    {
+      "actions": [
+        "knockIn"
+      ],
+      "builtIn": "cancelTimer"
+    },
+    {
+      "actions": [
+        "leverUp"
+      ],
+      "builtIn": "toggleKeepAwake"
+    }
+  ]
+}
